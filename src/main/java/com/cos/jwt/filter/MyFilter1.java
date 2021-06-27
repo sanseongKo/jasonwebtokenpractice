@@ -12,8 +12,9 @@ public class MyFilter1 implements Filter{
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("filter1");
-		chain.doFilter(request, response);//계속 프로세스를 진행하기 위한
+		
+		System.out.println("필터1");
+		chain.doFilter(request, response);
 		
 	}
 }
